@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tribute to Mike Tyson, Legendary Boxer">
+    <title>Tribute to Mike Tyson</title>
+    <style>
+        /* General Styles */
+        img {
+            width: 60%;
+            text-align: center;
+        }
+        img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    max-width: 600px; /* Restricts the maximum width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Centers the image */
+    margin: 0 auto;
+}
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #dc00f0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #dc00f0;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .bio img,
+        .gallery img {
+            width: 40%; /* Resize to 80% of the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .timeline {
+            margin-top: 20px;
+        }
+
+        .timeline ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .timeline li {
+            padding: 10px;
+            background-color: #e8f5e9;
+            margin-bottom: 10px;
+            border-left: 5px solid #dc00f0;
+            font-size: 16px;
+        }
+
+        .testimonial-form input,
+        .testimonial-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .testimonial-form button {
+            padding: 10px 20px;
+            background-color: #4c60af;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .testimonial-form button:hover {
+            background-color: #dc00f0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .timeline li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tribute to Mike Tyson</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#bio">Biography</a>
+        <a href="#legacy">Legacy</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Homepage Section -->
+        <section id="home" class="section">
+            <h2>Welcome to the Tribute Website</h2>
+            <img src="data:image/jpeg;base64,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" alt="Mike Tyson in the ring">
+            <p>This website is dedicated to Mike Tyson, one of the greatest boxers in history, known for his incredible power and fierce fighting style.</p>
+        </section>
+
+        <section id="bio" class="section bio">
+            <h2>Biography</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIchnj78i7OqxnwU_eBfPhdgJe3pg71h66g&s" alt="Mike Tyson Portrait">
+            <p>Mike Tyson, born on June 30, 1966, in Brooklyn, New York, rose to fame as a dominant heavyweight boxing champion. Known as "Iron Mike," he became the youngest heavyweight champion in history at the age of 20, showcasing a mix of power, speed, and defensive skills rarely seen in the sport.</p>
+            <p>Despite facing personal and professional challenges, Tyson's impact on boxing remains unparalleled, with 50 career wins, including 44 knockouts.</p>
+        </section>
+
+        <section id="legacy" class="section">
+            <h2>Legacy</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1xDrHnmlwx-_9nUyfi7pLH7ha92Ul7GnZww&s" alt="Mike Tyson celebrating a win">
+            <p>Mike Tyson's legacy extends beyond boxing. As a cultural icon, he inspired generations of athletes and fans with his electrifying performances and larger-than-life persona.</p>
+            <h3>Timeline of Key Events</h3>
+            <div class="timeline">
+                <ul>
+                    <li>1986: Became the youngest heavyweight champion in history.</li>
+                    <li>1988: Unified the heavyweight title by defeating Michael Spinks in 91 seconds.</li>
+                    <li>1997: Famous for the controversial fight with Evander Holyfield.</li>
+                    <li>2005: Retired from professional boxing, leaving an indelible mark on the sport.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery">
+            <h2>Photo & Media Gallery</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1HWgYLalMvtoi2-93VB0zr_LBbOQ-0l2GA&s" alt="Iconic moments of Mike Tyson">
+            <p>Images and media capturing the legendary career of Mike Tyson.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Leave a Tribute</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy14IixiH4LP2LVMbEgTbEeIX8R-SP-tbOzA&s" alt="Mike Tyson motivational">
+            <p>Share your thoughts and memories about Mike Tyson's incredible career and legacy.</p>
+            <div class="testimonial-form">
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Your Tribute" required></textarea>
+                <button type="submit">Submit Tribute</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 created this webpage by ELMONZER ADEEB</p>
+    </footer>
+</body>
+
+</html>
